@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>break-it-down</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <form id="form">
+        <div class="form-div">
+          <label for="task-input">What do you need to do first?:</label>
+          <input
+            type="text"
+            name="task-input"
+            id="task-input"
+            minlength="3"
+            maxlength="280"
+            required
+          />
+        </div>
+        <div class="form-div">
+          <button
+            id="submit-button"
+            formaction="main.js"
+            form="form"
+            type="submit"
+          >
+            Submit Task
+          </button>
+        </div>
+      </form>
+      <form id="confirmation-form" hidden disabled>
+        <label for="yes_no_radio"> Can you do that now? </label>
+        <p><input type="radio" name="yes_no" value="1" />Yes</p>
+        <p><input type="radio" name="yes_no" value="0" />No</p>
+      </form>
+      <div id="potential-task-list"></div>
+      <ul id="task-list"></ul>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

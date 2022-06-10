@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type:none;
+}
+
+#container {
+    border: 3px solid rebeccapurple;
+    width: 50%;
+}
+
+#list-form {
+    border: 2px solid orangered;
+}
+
+.task {
+    border: 2px solid rgb(152, 251, 226);
+}
